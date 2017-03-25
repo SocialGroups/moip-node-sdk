@@ -9,4 +9,4 @@ node_js:
   - "0.10"
 after_script:
   - npm install -g coveralls
-  - coveralls < coverage/lcov.info
+  - npm run coverage
