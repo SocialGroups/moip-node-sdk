@@ -1,0 +1,29 @@
+{
+  "name": "moip-node-sdk",
+  "version": "1.0.0",
+  "description": "SDK moip to node using promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SocialGroups/moip-node-sdk.git"
+  },
+  "keywords": [
+    "moip",
+    "node",
+    "sdk"
+  ],
+  "author": "Lucas Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SocialGroups/moip-node-sdk/issues"
+  },
+  "homepage": "https://github.com/SocialGroups/moip-node-sdk#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0"
+  }
+}
