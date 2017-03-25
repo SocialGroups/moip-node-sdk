@@ -11,7 +11,7 @@
     "test-e2e": "mocha --compilers js:babel-core/register test/e2e/**/*.spec.js",
     "test-e2e-watch": "mocha --watch --compilers js:babel-core/register test/e2e/**/*.spec.js",
     "lint-check": "standard",
-    "lint-fix": "standard --fix",
+    "lint-fix": "standard --fix"
   },
   "repository": {
     "type": "git",
