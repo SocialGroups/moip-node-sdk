@@ -2,9 +2,15 @@
   "name": "moip-node-sdk",
   "version": "1.0.0",
   "description": "SDK moip to node using promises",
-  "main": "index.js",
+  "main": "dist/moip.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm run coverage",
+    "coverage": "babel-node node_modules/.bin/babel-istanbul cover _mocha -- --timeout 30000 test/**/*.spec.js",
+    "test-unit": "mocha --compilers js:babel-core/register test/unit/**/*.spec.js",
+    "test-unit-watch": "mocha --watch --compilers js:babel-core/register test/unit/**/*.spec.js",
+    "test-e2e": "mocha --compilers js:babel-core/register test/e2e/**/*.spec.js",
+    "test-e2e-watch": "mocha --watch --compilers js:babel-core/register test/e2e/**/*.spec.js",
+    "build-node": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +28,13 @@
   },
   "homepage": "https://github.com/SocialGroups/moip-node-sdk#readme",
   "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-istanbul": "^0.12.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babelify": "^7.3.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "mocha": "^3.2.0"
